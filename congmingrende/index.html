@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聪明人的训练-思维训练方法、认知提升与日常练习指南</title>
+<meta name="description" content="聪明人的训练指南：了解思维训练的核心方向，包括逻辑推理、记忆方法、专注力培养、批判性思考与日常可执行的练习建议，帮助你把认知能力变成可训练的习惯。">
+<meta name="keywords" content="聪明人的训练,思维训练,逻辑思维训练,记忆力训练,专注力训练,认知提升,批判性思维">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1b2430;
+  --ink-soft:#4a5568;
+  --line:#e2e6ec;
+  --bg:#f6f7f9;
+  --card:#ffffff;
+  --accent:#2f6bff;
+  --accent-soft:#eaf0ff;
+  --accent-dark:#1d4ed8;
+  --warm:#ff8a3d;
+  --warm-soft:#fff2e8;
+  --green:#12a37a;
+  --green-soft:#e6f7f1;
+  --radius:14px;
+  --shadow:0 2px 10px rgba(27,36,48,.06);
+  --shadow-lg:0 10px 30px rgba(27,36,48,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ============ 顶部 ============ */
+.topbar{
+  background:#101823;
+  color:#c7d0dc;
+  font-size:13px;
+  padding:8px 0;
+}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar span{opacity:.85}
+.topbar nav{display:flex;gap:18px;flex-wrap:wrap}
+.topbar nav a{opacity:.8;transition:.2s}
+.topbar nav a:hover{opacity:1;color:#fff}
+
+header.site-header{
+  background:var(--card);
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:50;
+  box-shadow:0 1px 0 rgba(27,36,48,.03);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:14px 0;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{
+  width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),#6d9bff);
+  color:#fff;font-weight:700;font-size:19px;
+  display:flex;align-items:center;justify-content:center;
+  letter-spacing:-.5px;
+  box-shadow:0 4px 12px rgba(47,107,255,.28);
+}
+.brand-text b{display:block;font-size:18px;letter-spacing:.3px;line-height:1.3}
+.brand-text small{display:block;font-size:12px;color:var(--ink-soft);letter-spacing:.6px}
+
+.main-nav{display:flex;gap:6px;flex-wrap:wrap}
+.main-nav a{
+  padding:8px 14px;border-radius:9px;font-size:15px;color:var(--ink-soft);
+  transition:.18s;font-weight:500;
+}
+.main-nav a:hover{background:var(--accent-soft);color:var(--accent-dark)}
+.main-nav a.active{background:var(--accent);color:#fff}
+
+/* ============ 首屏 ============ */
+.hero{
+  background:
+    radial-gradient(900px 380px at 88% -12%,rgba(47,107,255,.16),transparent 60%),
+    radial-gradient(700px 320px at 4% 110%,rgba(255,138,61,.13),transparent 60%),
+    #ffffff;
+  border-bottom:1px solid var(--line);
+  padding:56px 0 50px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.35fr 1fr;
+  gap:48px;
+  align-items:center;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--accent-soft);color:var(--accent-dark);
+  font-size:13px;font-weight:600;
+  padding:6px 14px;border-radius:100px;margin-bottom:18px;
+}
+.hero-tag i{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+.hero h1{
+  font-size:40px;line-height:1.28;letter-spacing:-.5px;
+  margin-bottom:18px;font-weight:700;
+}
+.hero h1 em{font-style:normal;color:var(--accent);border-bottom:3px solid rgba(47,107,255,.25)}
+.hero p.lead{
+  font-size:17px;color:var(--ink-soft);max-width:620px;margin-bottom:26px;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:10px;font-size:15px;font-weight:600;
+  transition:.2s;cursor:pointer;border:none;
+}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(47,107,255,.28)}
+.btn-primary:hover{background:var(--accent-dark);transform:translateY(-1px)}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent-dark)}
+
+.hero-points{display:flex;gap:26px;flex-wrap:wrap}
+.hero-points div{font-size:14px;color:var(--ink-soft);display:flex;align-items:center;gap:7px}
+.hero-points b{color:var(--ink);font-size:16px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex:none}
+
+.hero-panel{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:26px;
+  box-shadow:var(--shadow-lg);
+}
+.hero-panel h3{font-size:16px;margin-bottom:6px}
+.hero-panel .sub{font-size:13px;color:var(--ink-soft);margin-bottom:18px}
+.ability{margin-bottom:16px}
+.ability:last-child{margin-bottom:0}
+.ability-top{display:flex;justify-content:space-between;font-size:14px;margin-bottom:7px}
+.ability-top span:last-child{color:var(--ink-soft);font-size:13px}
+.bar{height:8px;border-radius:100px;background:#eef1f6;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:100px;background:linear-gradient(90deg,var(--accent),#7ba4ff)}
+.bar.warm i{background:linear-gradient(90deg,var(--warm),#ffb27a)}
+.bar.green i{background:linear-gradient(90deg,var(--green),#5fd0ae)}
+
+/* ============ 通用区块 ============ */
+section.block{padding:56px 0}
+.section-head{margin-bottom:32px;max-width:760px}
+.section-head .kicker{
+  font-size:13px;font-weight:700;letter-spacing:1.5px;
+  color:var(--accent);text-transform:uppercase;margin-bottom:8px;display:block;
+}
+.section-head h2{font-size:28px;letter-spacing:-.3px;margin-bottom:12px;line-height:1.35}
+.section-head p{color:var(--ink-soft);font-size:15.5px}
+
+/* ============ 训练方向卡片 ============ */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;transition:.22s;box-shadow:var(--shadow);
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#d3dcf0}
+.card .icon{
+  width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  font-size:21px;margin-bottom:16px;background:var(--accent-soft);color:var(--accent-dark);
+}
+.card .icon.warm{background:var(--warm-soft);color:#d9660f}
+.card .icon.green{background:var(--green-soft);color:#0b7d5c}
+.card h3{font-size:18px;margin-bottom:10px}
+.card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:14px}
+.card ul{list-style:none;font-size:14px;color:var(--ink-soft)}
+.card ul li{padding-left:16px;position:relative;margin-bottom:6px}
+.card ul li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:#c3cbd8}
+
+/* ============ 训练路径 ============ */
+.path{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.path-list{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
+.path-item{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;position:relative;
+}
+.path-item::before{
+  counter-increment:step;content:"0" counter(step);
+  font-size:13px;font-weight:700;color:var(--accent);
+  letter-spacing:1px;display:block;margin-bottom:12px;
+}
+.path-item h3{font-size:16.5px;margin-bottom:9px}
+.path-item p{font-size:14px;color:var(--ink-soft)}
+
+/* ============ 练习清单 + 侧栏 ============ */
+.two-col{display:grid;grid-template-columns:1.6fr 1fr;gap:36px;align-items:start}
+.practice-list{display:flex;flex-direction:column;gap:16px}
+.practice{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;display:flex;gap:18px;transition:.2s;
+}
+.practice:hover{border-color:#d3dcf0;box-shadow:var(--shadow)}
+.practice .num{
+  flex:none;width:38px;height:38px;border-radius:10px;background:var(--accent-soft);
+  color:var(--accent-dark);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px;
+}
+.practice h3{font-size:16.5px;margin-bottom:7px}
+.practice p{font-size:14.5px;color:var(--ink-soft)}
+.practice .meta{font-size:12.5px;color:#8b96a8;margin-top:9px}
+
+aside.sidebar{display:flex;flex-direction:column;gap:20px;position:sticky;top:88px}
+.side-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;box-shadow:var(--shadow);
+}
+.side-card h3{font-size:16px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.side-card ul{list-style:none}
+.side-card ul li{padding:9px 0;font-size:14.5px;color:var(--ink-soft);border-bottom:1px dashed #eef1f6;display:flex;gap:10px}
+.side-card ul li:last-child{border-bottom:none}
+.side-card ul li b{color:var(--accent);font-weight:700;flex:none}
+.side-card.note{background:var(--warm-soft);border-color:#ffe0c9}
+.side-card.note h3{border-bottom-color:#ffd9bb}
+.side-card.note p{font-size:14px;color:#8a5a2b}
+
+/* ============ 误区对比 ============ */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.compare-col{border-radius:var(--radius);padding:26px;border:1px solid var(--line);background:#fff}
+.compare-col.bad{background:#fdf6f6;border-color:#f5dcdc}
+.compare-col.good{background:#f4fbf8;border-color:#d5efe5}
+.compare-col h3{font-size:17px;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.compare-col.bad h3{color:#b53c3c}
+.compare-col.good h3{color:#0b7d5c}
+.compare-col ul{list-style:none}
+.compare-col ul li{font-size:14.5px;color:var(--ink-soft);padding:8px 0 8px 22px;position:relative}
+.compare-col ul li::before{position:absolute;left:0;top:8px;font-size:13px}
+.compare-col.bad ul li::before{content:"✕";color:#d16a6a}
+.compare-col.good ul li::before{content:"✓";color:#12a37a}
+
+/* ============ FAQ ============ */
+.faq{max-width:860px;margin:0 auto}
+.faq-item{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  margin-bottom:12px;overflow:hidden;
+}
+.faq-q{
+  width:100%;text-align:left;background:none;border:none;cursor:pointer;
+  padding:18px 22px;font-size:16px;font-weight:600;color:var(--ink);
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  font-family:inherit;transition:.18s;
+}
+.faq-q:hover{background:#fafbfd}
+.faq-q .plus{
+  flex:none;width:22px;height:22px;border-radius:50%;background:var(--accent-soft);
+  color:var(--accent-dark);font-size:15px;line-height:1;display:flex;align-items:center;justify-content:center;
+  transition:.25s;
+}
+.faq-item.open .faq-q .plus{transform:rotate(45deg);background:var(--accent);color:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-a p{padding:0 22px 20px;font-size:14.5px;color:var(--ink-soft)}
+
+/* ============ 结语 CTA ============ */
+.cta{
+  background:linear-gradient(135deg,#16233a,#26406e);
+  color:#e8eefb;border-radius:var(--radius);
+  padding:44px 40px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;
+}
+.cta h2{font-size:24px;margin-bottom:10px;letter-spacing:-.2px}
+.cta p{font-size:15px;color:#b8c6de;max-width:600px}
+.cta .btn-primary{box-shadow:0 8px 22px rgba(0,0,0,.28)}
+
+/* ============ 页脚 ============ */
+footer.site-footer{background:#101823;color:#93a1b5;padding:46px 0 26px;margin-top:56px;font-size:14px}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;margin-bottom:32px}
+.footer-grid h4{color:#fff;font-size:15px;margin-bottom:14px}
+.footer-grid p{font-size:13.5px;line-height:1.85;color:#8b98ad}
+.footer-grid ul{list-style:none}
+.footer-grid ul li{margin-bottom:9px}
+.footer-grid ul li a{color:#93a1b5;font-size:13.5px;transition:.18s}
+.footer-grid ul li a:hover{color:#fff}
+.footer-bottom{
+  border-top:1px solid #22303f;padding-top:20px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px;color:#6f7d92;
+}
+
+/* ============ 响应式 ============ */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero h1{font-size:33px}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .path-list{grid-template-columns:1fr 1fr}
+  .two-col{grid-template-columns:1fr}
+  aside.sidebar{position:static}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .topbar .wrap{justify-content:center}
+  .topbar nav{display:none}
+  .header-inner{flex-direction:column;align-items:flex-start;gap:12px}
+  .main-nav{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}
+  .main-nav a{white-space:nowrap;font-size:14px;padding:7px 12px}
+  .hero{padding:38px 0 34px}
+  .hero h1{font-size:27px}
+  .hero p.lead{font-size:15.5px}
+  section.block{padding:40px 0}
+  .section-head h2{font-size:23px}
+  .grid-3{grid-template-columns:1fr}
+  .path-list{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .cta{padding:32px 24px}
+  .cta h2{font-size:20px}
+  .footer-grid{grid-template-columns:1fr;gap:24px}
+  .practice{padding:18px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>思维训练 · 认知方法 · 日常练习</span>
+    <nav>
+      <a href="#directions">训练方向</a>
+      <a href="#path">训练路径</a>
+      <a href="#practice">练习清单</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="brand-mark">智</div>
+      <div class="brand-text">
+        <b>聪明人的训练</b>
+        <small>可练习的思维方式</small>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#directions">训练方向</a>
+      <a href="#path">训练路径</a>
+      <a href="#practice">练习清单</a>
+      <a href="#mistakes">常见误区</a>
+      <a href="#faq">问答</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-tag"><i></i>认知能力可以被训练</span>
+        <h1>聪明人的训练：把<em>思维方式</em>变成每天可执行的练习</h1>
+        <p class="lead">
+          很多人把“聪明”理解为天生的智力差异，但真正决定思考质量的，往往是可训练的习惯：如何拆解问题、如何检验自己的判断、如何在信息不完整时做出选择。这个页面整理的是一套面向普通人的思维训练框架，从逻辑推理、记忆方法、专注力到批判性思考，帮你找到可以立刻开始的练习方向。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#practice">查看练习清单</a>
+          <a class="btn btn-ghost" href="#directions">了解训练方向</a>
+        </div>
+        <div class="hero-points">
+          <div><span class="dot"></span><span><b>4</b> 个核心训练方向</span></div>
+          <div><span class="dot"></span><span><b>8</b> 项日常可做练习</span></div>
+          <div><span class="dot"></span><span>无需特殊工具</span></div>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <h3>能力训练的四个维度</h3>
+        <p class="sub">不同维度侧重不同，建议按自己的薄弱项分配时间</p>
+
+        <div class="ability">
+          <div class="ability-top"><span>逻辑与推理</span><span>结构化拆解</span></div>
+          <div class="bar"><i style="width:86%"></i></div>
+        </div>
+        <div class="ability">
+          <div class="ability-top"><span>记忆与调用</span><span>理解优先</span></div>
+          <div class="bar warm"><i style="width:72%"></i></div>
+        </div>
+        <div class="ability">
+          <div class="ability-top"><span>专注与深度工作</span><span>减少干扰</span></div>
+          <div class="bar green"><i style="width:65%"></i></div>
+        </div>
+        <div class="ability">
+          <div class="ability-top"><span>批判与反思</span><span>检验判断</span></div>
+          <div class="bar"><i style="width:78%"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 训练方向 -->
+  <section class="block" id="directions">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Training Directions</span>
+        <h2>聪明人的训练，主要练什么</h2>
+        <p>思维训练不是一个笼统的概念。把它拆开来看，至少有四个方向各自对应不同的练习方式，也各自有可以观察的进步信号。</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <div class="icon">逻</div>
+          <h3>逻辑与结构化思考</h3>
+          <p>把模糊的问题拆成可以逐个处理的小问题，识别前提、结论和推理链条中的断点。</p>
+          <ul>
+            <li>练习：把一段观点写成前提—结论</li>
+            <li>练习：为同一问题列出两种解释</li>
+            <li>进步信号：能快速说出问题的边界</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="icon warm">记</div>
+          <h3>记忆与知识调用</h3>
+          <p>记忆不是死背，而是把新信息挂到已有理解上，让它在需要时能被主动调出来。</p>
+          <ul>
+            <li>练习：用自己的话复述刚学的内容</li>
+            <li>练习：间隔重复，而不是集中突击</li>
+            <li>进步信号：能举例说明，而不只是背定义</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="icon green">专</div>
+          <h3>专注与深度处理</h3>
+          <p>思考需要连续的时间块。频繁切换任务会让理解停留在表面，难以形成真正的判断。</p>
+          <ul>
+            <li>练习：一次只处理一件事，设定时长</li>
+            <li>练习：把手机放到视线之外</li>
+            <li>进步信号：能连续投入 30 分钟以上</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="icon">审</div>
+          <h3>批判性思考与反思</h3>
+          <p>对自己的判断保持怀疑，主动寻找反面证据，而不是只收集支持自己观点的信息。</p>
+          <ul>
+            <li>练习：写下“如果我错了，会是什么原因”</li>
+            <li>练习：区分事实陈述与价值判断</li>
+            <li>进步信号：能说出自己判断的置信程度</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="icon warm">表</div>
+          <h3>表达与沟通</h3>
+          <p>想清楚和说清楚互相促进。能把复杂内容讲明白，往往说明理解已经到位。</p>
+          <ul>
+            <li>练习：用三句话讲清一件事</li>
+            <li>练习：先给结论，再给理由</li>
+            <li>进步信号：对方能复述你的要点</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="icon green">迁</div>
+          <h3>迁移与举一反三</h3>
+          <p>把在一个领域学到的方法，用到另一个看似无关的问题上，这是训练效果最直接的体现。</p>
+          <ul>
+            <li>练习：找出两个问题的共同结构</li>
+            <li>练习：把一个方法套用到新场景</li>
+            <li>进步信号：能主动联想到类似案例</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 训练路径 -->
+  <section class="block path" id="path">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Learning Path</span>
+        <h2>从零开始的一条训练路径</h2>
+        <p>如果你刚开始接触思维训练，不必一次全部铺开。按下面的顺序推进，每一步都建立在前一步的基础上。</p>
+      </div>
+
+      <div class="path-list">
+        <div class="path-item">
+          <h3>先观察自己的思考</h3>
+          <p>用一周时间记录：你在什么事情上容易卡住，是记不住、想不清，还是容易分心。先定位问题，再选方法。</p>
+        </div>
+        <div class="path-item">
+          <h3>选一个方向集中练</h3>
+          <p>从四个方向里挑一个最影响你日常的方向，坚持三到四周。同时练太多方向，往往每个都停留在表面。</p>
+        </div>
+        <div class="path-item">
+          <h3>用输出检验理解</h3>
+          <p>把学到的东西写成笔记、讲给别人，或者用在真实问题上。能输出，才算真正掌握。</p>
+        </div>
+        <div class="path-item">
+          <h3>定期复盘并调整</h3>
+          <p>每隔一段时间回看：哪些练习有效，哪些只是走了形式。保留有效的，替换无效的。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 练习清单 + 侧栏 -->
+  <section class="block" id="practice">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Daily Practice</span>
+        <h2>可以直接开始的日常练习</h2>
+        <p>下面这些练习不需要额外工具，也不需要大块时间。关键在于持续，而不是单次做得多完整。</p>
+      </div>
+
+      <div class="two-col">
+        <div class="practice-list">
+
+          <article class="practice">
+            <div class="num">01</div>
+            <div>
+              <h3>复述练习</h3>
+              <p>读完一段内容后合上材料，用自己的话把它讲一遍。讲不出来的地方，就是理解还不牢的地方。这个练习同时训练记忆和表达，是性价比很高的一项。</p>
+              <div class="meta">建议时长：每次 10 分钟 · 适合每天做</div>
+            </div>
+          </article>
+
+          <article class="practice">
+            <div class="num">02</div>
+            <div>
+              <h3>前提与结论拆解</h3>
+              <p>找一段评论或一篇文章，把它拆成“它假设了什么”和“它想证明什么”。很多看起来有说服力的说法，拆开后会发现问题出在前提上。</p>
+              <div class="meta">建议时长：每次 15 分钟 · 每周 3 次以上</div>
+            </div>
+          </article>
+
+          <article class="practice">
+            <div class="num">03</div>
+            <div>
+              <h3>反面证据练习</h3>
+              <p>对某个你比较确信的判断，主动去找能推翻它的理由。这不是为了否定自己，而是为了让判断更稳。能承受反驳的观点，才值得坚持。</p>
+              <div class="meta">建议时长：每次 10 分钟 · 遇到重要判断时做</div>
+            </div>
+          </article>
+
+          <article class="practice">
+            <div class="num">04</div>
+            <div>
+              <h3>单任务专注块</h3>
+              <p>设定一段固定时间，只做一件事，中途不切换。可以从 25 分钟开始，逐渐延长。重点不是时长，而是这段时间里注意力是否真正集中。</p>
+              <div class="meta">建议时长：每天 1 到 2 个专注块</div>
+            </div>
+          </article>
+
+          <article class="practice">
+            <div class="num">05</div>
+            <div>
+              <h3>间隔回顾</h3>
+              <p>把要记的内容分散到几天里多次回顾，而不是一次性反复读。间隔会让记忆更牢，也更容易在需要时被调出来。</p>
+              <div class="meta">建议时长：每次 5 到 8 分钟 · 按天安排</div>
+            </div>
+          </article>
+
+          <article class="practice">
+            <div class="num">06</div>
+            <div>
+              <h3>三句话表达</h3>
+              <p>把一件事压缩成三句话：结论是什么、理由是什么、需要注意什么。这个结构能帮你在沟通中更快抓住重点，也能反过来检验自己是否想清楚了。</p>
+              <div class="meta">建议时长：每次 5 分钟 · 随时可做</div>
+            </div>
+          </article>
+
+          <article class="practice">
+            <div class="num">07</div>
+            <div>
+              <h3>跨领域联想</h3>
+              <p>把当前问题和你熟悉的另一个领域做对比，找共同的结构。很多方法之所以有效，是因为它们描述的是同一类问题。</p>
+              <div class="meta">建议时长：每次 10 分钟 · 每周 2 到 3 次</div>
+            </div>
+          </article>
+
+          <article class="practice">
+            <div class="num">08</div>
+            <div>
+              <h3>决策复盘</h3>
+              <p>对已经做出的选择做一次回看：当时依据了什么信息，忽略了什么，结果和预期差在哪里。复盘的价值在于改进下一次的判断过程，而不只是评价结果。</p>
+              <div class="meta">建议时长：每次 15 分钟 · 每周一次</div>
+            </div>
+          </article>
+
+        </div>
+
+        <aside class="sidebar">
+          <div class="side-card">
+            <h3>训练时的三个原则</h3>
+            <ul>
+              <li><b>一</b><span>少量多次，优于一次做很久</span></li>
+              <li><b>二</b><span>输出检验，优于反复阅读</span></li>
+              <li><b>三</b><span>真实问题，优于纯抽象练习</span></li>
+            </ul>
+          </div>
+
+          <div class="side-card">
+            <h3>适合搭配的场景</h3>
+            <ul>
+              <li><b>·</b><span>工作复盘与项目总结</span></li>
+              <li><b>·</b><span>考试复习与知识梳理</span></li>
+              <li><b>·</b><span>阅读笔记与内容消化</span></li>
+              <li><b>·</b><span>日常沟通与表达训练</span></li>
+            </ul>
+          </div>
+
+          <div class="side-card note">
+            <h3>一点提醒</h3>
+            <p>思维训练的效果通常不会立刻显现，它更像是一种慢慢累积的变化。与其追求短期内的明显提升，不如关注练习是否稳定、是否用在了真实问题上。</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见误区 -->
+  <section class="block" id="mistakes">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Common Pitfalls</span>
+        <h2>训练中容易走偏的地方</h2>
+        <p>方法本身没有对错，但使用方式会决定效果。下面这些对比可以帮助你检查自己的练习是否走在了正确的方向上。</p>
+      </div>
+
+      <div class="compare">
+        <div class="compare-col bad">
+          <h3>容易无效的做法</h3>
+          <ul>
+            <li>把资料收藏起来，但从不回看</li>
+            <li>反复阅读同一段内容，以为读得多就记住了</li>
+            <li>同时开始多个训练方向，每个都坚持不了几天</li>
+            <li>只做抽象题目，不与真实问题挂钩</li>
+            <li>只关注结论，不检查推理过程</li>
+            <li>把训练当成任务打卡，忽略是否真正理解</li>
+          </ul>
+        </div>
+        <div class="compare-col good">
+          <h3>更有效的做法</h3>
+          <ul>
+            <li>学完就用自己的话复述一遍</li>
+            <li>用间隔回顾代替集中反复阅读</li>
+            <li>先集中练一个方向，稳定后再扩展</li>
+            <li>把方法用在手头的真实问题上</li>
+            <li>关注前提是否成立、推理是否连贯</li>
+            <li>定期复盘，保留有效练习，替换无效的</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="section-head" style="margin-left:auto;margin-right:auto;text-align:center">
+        <span class="kicker">FAQ</span>
+        <h2>关于聪明人的训练，常见问题</h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q">思维训练真的能让人变聪明吗？<span class="plus">+</span></button>
+          <div class="faq-a"><p>更准确的说法是，思维训练可以改善思考的过程和习惯，比如更擅长拆解问题、更容易发现推理漏洞、更能保持专注。这些能力会影响你处理问题的效率和质量。至于它是否等同于提升智力测验分数，目前并没有简单统一的结论，不建议把两者直接画等号。</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">每天需要花多少时间练习？<span class="plus">+</span></button>
+          <div class="faq-a"><p>时间长短不是关键，稳定更重要。每天十几分钟、能持续几周，通常比偶尔花两小时更有效。你可以先从一两个练习开始，等形成习惯后再逐步增加。</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">成年人开始训练还来得及吗？<span class="plus">+</span></button>
+          <div class="faq-a"><p>来得及。思维习惯和注意力管理在成年后仍然可以调整，只是改变需要时间和重复。相比起点，持续的练习频率对结果的影响更大。</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">应该先练逻辑还是先练记忆？<span class="plus">+</span></button>
+          <div class="faq-a"><p>看你当前最需要解决什么问题。如果经常觉得知识记不住、用不上，可以先从记忆和理解入手；如果经常觉得想法混乱、说不清楚，可以先练结构化思考。两者并不冲突，但初期集中一个方向更容易看到变化。</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">做逻辑题、数独这类题目有用吗？<span class="plus">+</span></button>
+          <div class="faq-a"><p>这类练习可以训练特定类型的推理，但效果往往集中在相似任务上。如果目标是提升日常思考质量，建议把题目训练和真实问题结合起来，比如用同样的思路去分析工作中的决策或一篇文章的论证。</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">怎么判断训练有没有效果？<span class="plus">+</span></button>
+          <div class="faq-a"><p>可以观察一些具体的变化：能不能更快说清一个问题、能不能发现自己之前的判断漏洞、能不能在更长时间里保持专注、能不能把学过的方法用到新场景。这些信号比主观感觉更可靠。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 结语 -->
+  <section class="block">
+    <div class="wrap">
+      <div class="cta">
+        <div>
+          <h2>从今天的一个小练习开始</h2>
+          <p>不需要等到准备充分。选一项练习，今天做一次，坚持一周，再回头看自己的感受和变化。</p>
+        </div>
+        <a class="btn btn-primary" href="#practice">回到练习清单</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>聪明人的训练</h4>
+        <p>一个围绕思维训练与认知方法的主题页面，整理可执行的练习方向、训练路径与常见问题，帮助你把思考变成可以持续改进的习惯。</p>
+      </div>
+      <div>
+        <h4>训练方向</h4>
+        <ul>
+          <li><a href="#directions">逻辑与结构化</a></li>
+          <li><a href="#directions">记忆与调用</a></li>
+          <li><a href="#directions">专注与深度处理</a></li>
+          <li><a href="#directions">批判与反思</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>练习内容</h4>
+        <ul>
+          <li><a href="#practice">日常练习清单</a></li>
+          <li><a href="#path">训练路径</a></li>
+          <li><a href="#mistakes">常见误区</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用建议</h4>
+        <ul>
+          <li>先定位自己的薄弱项</li>
+          <li>一次集中练一个方向</li>
+          <li>用输出检验理解</li>
+          <li>定期复盘并调整方法</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 聪明人的训练 · 内容仅供学习参考</span>
+      <span>思维训练 · 认知方法 · 日常练习</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var items = document.querySelectorAll('.faq-item');
+  items.forEach(function (item) {
+    var btn = item.querySelector('.faq-q');
+    var panel = item.querySelector('.faq-a');
+    btn.addEventListener('click', function () {
+      var isOpen = item.classList.contains('open');
+      items.forEach(function (other) {
+        other.classList.remove('open');
+        other.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+
+  var navLinks = document.querySelectorAll('.main-nav a');
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      navLinks.forEach(function (l) { l.classList.remove('active'); });
+      link.classList.add('active');
+    });
+  });
+})();
+</script>
+
+</body>
+  </html>
